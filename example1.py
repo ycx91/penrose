@@ -4,7 +4,7 @@ from penrose import PenroseP3, BtileL, psi
 
 # A simple example starting with a BL tile
 
-scale = 100
+scale = 100000
 tiling = PenroseP3(scale, ngen=5)
 
 theta = 2*math.pi / 5
@@ -15,4 +15,4 @@ C = scale/2 / psi + 0j
 tiling.set_initial_tiles([BtileL(A, B, C)])
 tiling.make_tiling()
 
-tiling.write_svg('example1.svg')
+tiling.write_svg(r'C:\Users\Phoenix\Desktop\testt.svg')
